@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Login</title>
+    <style>
+        body {
+            background-color: #b9c9d3;
+        }
+        
+        h1 {
+            color: #141414;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            width: 300px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(11, 11, 11);
+   color: white;
+   text-align: center;
+}
+        .slider-container {
+            margin-top: 50px;
+        }
+        
+  .recruiter-marquee{
+    height:250px;
+  }
+    </style>
+</head>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body style="background-color: #b9c9d3;">
+    <h1 style="background-color: rgb(219, 233, 156); padding: 10px; font-size: 45px;">BANK MANAGEMENT</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Banking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <h1>Bank Login</h1>
+    <form action="/login" method="POST">
+        <p>INVALID CREDENTIALS</p>
+    </form>
+    <br>
+    <br>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+        <div  >
+            
+            <marquee class="recruiter-marquee">
+                
+                <img src="/static/1.jpeg">
+                <img src="/static/2.jpeg">
+                <img src="/static/3.jpeg">
+                <img src="/static/4.jpeg">
+                <img src="/static/6.jpeg">
+                <img src="/static/7.jpeg">
+                <img src="/static/8.jpeg">
+                <img src="/static/9.jpeg">
+                
+                
+        
+            </marquee></div>
+            
+            <footer class="footer">
+                <div class="container">
+                    &copy; 2023 Bank of SRKR. All rights reserved.
+                </div>
+            </footer>
+</body>
+</html>

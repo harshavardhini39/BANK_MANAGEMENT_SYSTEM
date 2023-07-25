@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #b9c9d3;
+        }
+        .container {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px;
+            max-width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        h1 {
+            color: #db102e;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .form-group label {
+            color: #333;
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .btn-primary {
+            background-color: #003399;
+            border-color: #003399;
+        }
+        .btn-primary:hover {
+            background-color: #002b80;
+            border-color: #002b80;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-image {
+            max-width: 200px;
+        }
+        .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(19, 19, 19);
+   color: white;
+   text-align: center;
+}
+        .slider-container {
+            margin-top: 20px;
+        }
+        
+  
+  .recruiter-marquee{
+    height:300px;
+  }
+  .requiter-marquee img{
+    
+    object-fit: fill;
+  }
+        
+    </style>
+</head>
+<body>
+       <h1 style="background-color: rgb(219, 233, 156); padding: 10px; font-size: 55px;">BANK MANAGEMENT</h1>
+       
+        <p>Welcome, Bank Employees! This is the employee portal where you can access various resources and tools to assist you in your day-to-day operations.</p>
+    <p>Our employee portal provides a secure and convenient way for you to manage your tasks, communicate with colleagues, and stay updated with the latest bank policies and announcements.</p>
+    
+        <div class="container">
+        
+            <div class="logo-container">
+                <img class="logo-image" src="/static/bank.jpeg" alt="Bank Logo">
+            </div>
+        <form method="POST" action="/login">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    <br>
+   
+        <div  >
+            <h3 style="background-color: rgb(228, 179, 207);color: #333; text-align: center;"> Money whispers, and We listen closely.</h3>
+            <marquee class="recruiter-marquee">
+                
+                <img src="/static/1.jpeg">
+                <img src="/static/2.jpeg">
+                <img src="/static/3.jpeg">
+                <img src="/static/4.jpeg">
+                <img src="/static/6.jpeg">
+                <img src="/static/7.jpeg">
+                <img src="/static/8.jpeg">
+                <img src="/static/9.jpeg">
+                
+        
+            </marquee></div>
+           
+    <footer class="footer">
+        
+            &copy; 2023 Bank of SRKR. All rights reserved.
+        
+    </footer>
+
+
+</body>
+</html>

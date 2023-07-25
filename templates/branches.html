@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches</title>
+    <style>
+        body {
+            background-color: #b9c9d3;
+        }
+        
+        h1 {
+            color: #121112;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #0c0c0c;
+        }
+        
+        nav {
+            background-color: #1a1919;
+            box-shadow: 0 2px 4px rgba(192, 170, 170, 0.9);
+            padding: 10px;
+        }
+        
+        .navbar-brand {
+            color: #f2e7e7;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .navbar-nav .nav-link {
+            color: #333333;
+            font-weight: bold;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #4caf50;
+        }
+        form {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #dddddd;
+        }
+
+        table th, table td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        table tr:first-child th {
+            border-top: 2px solid #dddddd;
+        }
+
+        table tr:last-child td {
+            border-bottom: 2px solid #dddddd;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(11, 11, 11);
+   color: white;
+   text-align: center;
+}
+        .slider-container {
+            margin-top: 50px;
+        }
+        
+  .recruiter-marquee{
+    height:250px;
+  }
+    </style>
+</head>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body style="background-color: #b9c9d3;">
+    <h1 style="background-color: rgb(219, 233, 156); padding: 10px; font-size: 45px;">BANK MANAGEMENT</h1>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Banking System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/customers">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/loans">Loans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/branches">Branches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/accounts">Accounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/transactions">Transactions</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <h1>Branches</h1>
+    <!-- Add branch form -->
+    <form method="POST" action="/branches">
+        <label for="branch_id">Branch ID:</label>
+        <input type="text" id="branch_id" name="branch_id"><br><br>
+        <label for="branch_name">Branch Name:</label>
+        <input type="text" id="branch_name" name="branch_name"><br><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+        <label for="assets">Assets:</label>
+        <input type="text" id="assets" name="assets"><br><br>
+        <input type="submit" value="Add Branch">
+    </form>
+    <br>
+    <!-- Branch table -->
+    <table>
+        <tr>
+            <th>Branch ID</th>
+            <th>Branch Name</th>
+            <th>City</th>
+            <th>Assets</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+    <div  >
+            
+        <marquee class="recruiter-marquee">
+            
+            <img src="/static/1.jpeg">
+                <img src="/static/2.jpeg">
+                <img src="/static/3.jpeg">
+                <img src="/static/4.jpeg">
+                <img src="/static/6.jpeg">
+                <img src="/static/7.jpeg">
+                <img src="/static/8.jpeg">
+                <img src="/static/9.jpeg">
+                
+    
+        </marquee></div>
+        
+        <footer class="footer">
+            <div class="container">
+                &copy; 2023 Bank of SRKR. All rights reserved.
+            </div>
+        </footer>
+</body>
+</html>
